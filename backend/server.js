@@ -1,19 +1,22 @@
 import express from "express";
 import "dotenv/config";
 import cors from "cors";
+import connectDB from "./config/db.js";
 
 // Initialize Express App
 const app = express();
+
+await connectDB();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-	"Server is runnig";
+    res.send("Server is runnig")
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-	console.log("Server is running on port : " + PORT);
+	console.log("Server is running on http://localhost:" + PORT);
 });
