@@ -4,7 +4,7 @@
   "functions": {
     "server.js": {
       "runtime": "nodejs18.x",
-      "includeFiles": ["dist/**"]
+      "includeFiles": "dist/**"
     }
   },
   "routes": [
