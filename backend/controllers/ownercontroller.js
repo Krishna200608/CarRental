@@ -159,9 +159,9 @@ export const getDashboardData = async (req, res) => {
 
 // API to update user image
 
-export const updatedUserImage = async (req, res) => {
+export const updateUserImage = async (req, res) => {
 	try {
-		const { _id } = req.body;
+		const { _id } = req.user;
 
 		const imageFile = req.file;
 

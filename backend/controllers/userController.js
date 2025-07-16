@@ -1,11 +1,12 @@
 import User from "../models/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import Car from "../models/Car.js";
 
 // Generate JWT Token
 const generateToken = (userId) => {
 	const payload = userId;
-	return jwt.sign(payload, process.env.JWT_SECRET);
+	return jwt.sign({userId:payload}, process.env.JWT_SECRET);
 };
 
 // Register User
@@ -37,7 +38,7 @@ export const registerUser = async (req, res) => {
 		});
 
 		const token = generateToken(user._id.toString());
-		res.json({ success: true, token });
+		res.json({ success: true, token, message : "Registered Successfully" });
 	} catch (error) {
 		console.log(error);
 		return res.json({ success: false, message: error.message });
@@ -61,7 +62,7 @@ export const loginUser = async (req, res) => {
 		}
 
 		const token = generateToken(user._id.toString());
-		res.json({ success: true, token });
+		res.json({ success: true, token, message : "Logged in Successfully" });
 	} catch (error) {
 		console.log(error);
 		return res.json({ success: false, message: error.message });
@@ -80,3 +81,12 @@ export const getUserData = async (req, res) => {
 	}
 };
 
+export const getCars = async (req, res) => {
+	try {
+		const cars = await Car.find({isAvailable : true});
+		return res.json({success: true, cars});
+	} catch (error) {
+		console.log(error.message);	
+		return res.json({success: false, message: error.message});
+	}
+}
