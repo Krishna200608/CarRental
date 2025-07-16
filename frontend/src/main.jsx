@@ -3,10 +3,14 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { AppProvider } from "./context/AppContext.jsx";
+import { MotionConfig } from "motion/react";
+
 createRoot(document.getElementById("root")).render(
 	<BrowserRouter>
 		<AppProvider>
-			<App />
+			<MotionConfig viewport={{once: true}}>
+				<App />
+			</MotionConfig>
 		</AppProvider>
 	</BrowserRouter>
 );

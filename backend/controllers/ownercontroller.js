@@ -55,7 +55,7 @@ export const addCar = async (req, res) => {
 // API to list the Owner Car
 export const getOwnerCars = async (req, res) => {
 	try {
-		const { _id } = req.body;
+		const { _id } = req.user;
 		const cars = await Car.find({ owner: _id });
 		res.json({ success: true, cars });
 	} catch (error) {
@@ -67,7 +67,7 @@ export const getOwnerCars = async (req, res) => {
 //API to toggle car avaialbility
 export const toggleCarAvailability = async (req, res) => {
 	try {
-		const { _id } = req.body;
+		const { _id } = req.user;
 		const { carId } = req.body;
 
 		const car = await Car.findById(carId);
@@ -90,7 +90,7 @@ export const toggleCarAvailability = async (req, res) => {
 //API to delete a car
 export const deleteCar = async (req, res) => {
 	try {
-		const { _id } = req.body;
+		const { _id } = req.user;
 		const { carId } = req.body;
 
 		const car = await Car.findById(carId);
@@ -114,7 +114,7 @@ export const deleteCar = async (req, res) => {
 //API to get dashboard data
 export const getDashboardData = async (req, res) => {
 	try {
-		const { _id, role } = req.body;
+		const { _id, role } = req.user;
 
 		if (role !== "owner") {
 			return res.json({ success: false, message: "Unauathorized" });
