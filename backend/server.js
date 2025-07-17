@@ -8,6 +8,7 @@ import bookingRouter from "./routes/bookingRoutes.js";
 
 // Initialize Express App
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 await connectDB();
 
@@ -18,11 +19,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Server is runnig")
 });
+
 app.use('/api/user', userRouter);
 app.use('/api/owner', ownerRouter);
 app.use('/api/bookings', bookingRouter);
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
 	console.log("Server is running on http://localhost:" + PORT);
 });
