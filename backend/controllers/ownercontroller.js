@@ -1,4 +1,4 @@
-import imagekit from "../config/imagekit.js";
+import imagekit from "../config/imageKit.js";
 import Booking from "../models/Booking.js";
 import Car from "../models/Car.js";
 import User from "../models/User.js";
