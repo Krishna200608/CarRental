@@ -6,7 +6,7 @@ A full-stack car rental web application that allows users to browse, book, and m
 
 ## 🔗 Live Demo
 
-Try it out: [CarRental Live Site](https://carrental-frontend-e38k.onrender.com/)
+Try it out: <a href="https://carrental-frontend-e38k.onrender.com/" target="_blank">CarRental Live Site</a>
 
 ## 🎨 Preview
 
@@ -18,7 +18,7 @@ Try it out: [CarRental Live Site](https://carrental-frontend-e38k.onrender.com/)
 
 ## 🚀 Tech Stack
 
-* 🧩 **Frontend:** Vite + React
+* 🧹 **Frontend:** Vite + React
 * 🛠️ **Backend:** Node.js + Express
 * 💾 **Database:** MongoDB
 * 🖼️ **Image Uploads:** ImageKit
@@ -113,7 +113,7 @@ npm run server
 * 📷 Upload and display car images via ImageKit
 * 📅 Book cars with date selection and pricing
 * 🛠️ Admin dashboard for managing cars and bookings
-* 🌀 Smooth and responsive animations throughout the UI
+* 🔀 Smooth and responsive animations throughout the UI
 
 ## 📜 Available Scripts
 
