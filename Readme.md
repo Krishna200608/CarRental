@@ -1,6 +1,6 @@
 # <img src="./WebPics/favicon.svg" alt="QuickBlog Logo" width="50" height="29"> CarRental
 
-A full-stack car rental web application that allows users to browse, book, and manage car rentals with seamless image uploads and secure authentication.
+A full-stack car rental web application that allows users to browse, book, and manage car rentals with seamless image uploads, secure authentication, and animated UI interactions.
 
 ---
 
@@ -113,6 +113,7 @@ npm run server
 * 📷 Upload and display car images via ImageKit
 * 📅 Book cars with date selection and pricing
 * 🛠️ Admin dashboard for managing cars and bookings
+* 🌀 Smooth and responsive animations throughout the UI
 
 ## 📜 Available Scripts
 
@@ -130,11 +131,11 @@ npm run server
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-1️⃣ Fork it
-2️⃣ Create your feature branch (`git checkout -b feature/name`)
-3️⃣ Commit your changes (`git commit -m 'Add some feature'`)
-4️⃣ Push to the branch (`git push origin feature/name`)
-5️⃣ Open a Pull Request
+* 1️⃣ Fork it
+* 2️⃣ Create your feature branch (`git checkout -b feature/name`)
+* 3️⃣ Commit your changes (`git commit -m 'Add some feature'`)
+* 4️⃣ Push to the branch (`git push origin feature/name`)
+* 5️⃣ Open a Pull Request
 
 ---
 
