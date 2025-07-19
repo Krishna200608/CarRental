@@ -110,7 +110,7 @@ const AddCar = () => {
 						<label>Model</label>
 						<input
 							type="text"
-							placeholder="e.g. XS, E-Class, M4..."
+							placeholder="e.g. X5, E-Class, M4..."
 							required
 							className="px-3 py-2 mt-1 border border-borderColor rounded-md outline-none"
 							value={car.model}

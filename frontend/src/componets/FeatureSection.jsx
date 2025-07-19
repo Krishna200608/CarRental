@@ -21,7 +21,7 @@ const FeatureSection = () => {
 				transition={{ duration: 1, delay: 0.5 }}
 			>
 				<Title
-					title="featured Vehicles"
+					title="Featured Vehicles"
 					subTitle="Explore our selection of premium vehicles available for your next adventure."
 				/>
 			</motion.div>
