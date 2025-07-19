@@ -10,9 +10,9 @@ Try it out: [CarRental Live Site](https://carrental-frontend-e38k.onrender.com/)
 
 ## 🎨 Preview
 
-![QuickBlog Preview](./WebPics/preview.png)
+![QuickBlog Preview](./WebPics/Preview.png)
 
-![QuickBlog Preview](./WebPics/preview2.png)
+![QuickBlog Preview](./WebPics/Preview2.png)
 
 ---
 
