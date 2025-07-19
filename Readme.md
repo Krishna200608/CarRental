@@ -18,17 +18,17 @@ Try it out: <a href="https://carrental-frontend-e38k.onrender.com/" target="_bla
 
 ## 🚀 Tech Stack
 
-* 🧹 **Frontend:** Vite + React
+* 🧩 **Frontend:** Vite + React
 * 🛠️ **Backend:** Node.js + Express
-* 💾 **Database:** MongoDB
+* 📀 **Database:** MongoDB
 * 🖼️ **Image Uploads:** ImageKit
 
 ## 📁 Repository Structure
 
 ```
 CarRental/
-├── frontend/       # React client application
-└── backend/        # Express API server
+🔹 frontend/       # React client application
+🔹 backend/        # Express API server
 ```
 
 ## 🔧 Installation & Setup
@@ -113,7 +113,7 @@ npm run server
 * 📷 Upload and display car images via ImageKit
 * 📅 Book cars with date selection and pricing
 * 🛠️ Admin dashboard for managing cars and bookings
-* 🔀 Smooth and responsive animations throughout the UI
+* 🌀 Smooth and responsive animations throughout the UI
 
 ## 📜 Available Scripts
 
